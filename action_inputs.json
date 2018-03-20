@@ -28,4 +28,14 @@
   "question" : "What is the value for `oldGame`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
+}, {
+  "exportId" : "yu1p6suGTqycliN2V3yWGg",
+  "name" : "gameString",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "Enter a game string to test",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
 } ]

@@ -2,6 +2,8 @@ function(oldGame, ellipsis) {
   const Game = require('Game');
 const game = Game.fromString(oldGame);
 const isOver = game.isOver();
+const inspect = require('util').inspect;
+
 const args = [{ name: "oldGame", value: game.toString() }];
 const choices = isOver ? [{
   actionName: "play",
@@ -16,9 +18,11 @@ const choices = isOver ? [{
   args: args
 }];
 
+const myHand = game.userHand.format("you have");
+const theirHand = isOver ? game.dealerHand.format("dealer has") : game.dealerHand.formatHidden();
 ellipsis.success({
-  userHand: game.userHand.format("you have"),
-  dealerHand: isOver ? game.dealerHand.format("dealer has") : game.dealerHand.formatHidden(),
+  userHand: myHand,
+  dealerHand: theirHand,
   result: game.formatResult()
 }, {
   choices: choices
