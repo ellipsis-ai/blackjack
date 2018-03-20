@@ -1,0 +1,8 @@
+{
+  "name" : "Blackjack",
+  "exportId" : "b0gKVnnwRr-cQ0FhWO3gDg",
+  "icon" : "♠️",
+  "requiredAWSConfigs" : [ ],
+  "requiredOAuth2ApiConfigs" : [ ],
+  "requiredSimpleTokenApis" : [ ]
+}

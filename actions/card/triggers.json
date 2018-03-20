@@ -1,0 +1,6 @@
+[ {
+  "text" : "deal me a card",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+} ]

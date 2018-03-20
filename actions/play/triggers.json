@@ -1,0 +1,6 @@
+[ {
+  "text" : "play blackjack",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+} ]
