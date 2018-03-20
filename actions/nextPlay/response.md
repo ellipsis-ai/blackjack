@@ -1,7 +1,9 @@
-Your hand:
+**You:**
 {successResult.userHand}
 
-The dealer:
+
+**Me:**
 {successResult.dealerHand}
+
 
 {successResult.result}

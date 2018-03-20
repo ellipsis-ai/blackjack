@@ -1,1 +1,1 @@
-OK. For you, the {successResult}.
+OK. For you, the {successResult.newCard}. {successResult.result}

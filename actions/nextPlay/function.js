@@ -10,7 +10,7 @@ const choices = isOver ? [{
   label: "Play again"
 }] : [{
   actionName: "stand",
-  label: userScore < 21 ? "Stand" : "OK",
+  label: userScore < 21 ? "Stand" : "Proceed",
   args: args
 }];
 
@@ -22,8 +22,18 @@ if (!isOver && userScore < 21) {
   });
 }
 
-const myHand = game.userHand.format("you have");
-const theirHand = isOver ? game.dealerHand.format("dealer has") : game.dealerHand.formatHidden();
+let myHand = game.userHand.formatCards();
+let theirHand = isOver ? game.dealerHand.formatCards() : game.dealerHand.formatHidden();
+if (isOver || !game.userHand.hasAddedCards()) {
+  myHand += `  —  ${game.userHand.formatValue("You have")}`;
+}
+if (!isOver && !game.userHand.hasAddedCards()) {
+  myHand += ` ${game.userHand.formatOpinion()}`;
+}
+if (isOver) {
+  theirHand += `  —  ${game.dealerHand.formatValue("I have")}`;
+}
+
 ellipsis.success({
   userHand: myHand,
   dealerHand: theirHand,

@@ -1,1 +1,1 @@
-{successResult}
+How about the {successResult}
