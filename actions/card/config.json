@@ -1,6 +1,8 @@
 {
   "exportId" : "5rpj-79RSxGxhVVqLrOnwA",
   "name" : "card",
-  "forcePrivateResponse" : false,
-  "isDataType" : false
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : false,
+  "isTest" : false
 }

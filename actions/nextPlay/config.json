@@ -1,6 +1,8 @@
 {
   "exportId" : "KRy8QoGeSCSNaHYR4iLI5g",
   "name" : "nextPlay",
-  "forcePrivateResponse" : false,
-  "isDataType" : false
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : false,
+  "isTest" : false
 }

@@ -1,6 +1,8 @@
 {
   "exportId" : "HUK41vuMQuSNZ2ZJ-7IF7w",
   "name" : "stand",
-  "forcePrivateResponse" : false,
-  "isDataType" : false
+  "responseTypeId" : "Normal",
+  "canBeMemoized" : false,
+  "isDataType" : false,
+  "isTest" : false
 }
